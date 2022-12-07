@@ -1,0 +1,211 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'Times New Roman', Times, serif;
+   font-size: 1;
+}
+
+a {
+   text-decoration: none;
+   color: #333;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   display: flex;
+   height: auto;
+   justify-content: center;
+   background-color: #333;
+}
+
+.main-content {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-top: 4rem;
+   min-height: 600px;
+   align-items: center;
+   background-color: rgb(255, 255, 255);
+   padding: 5rem;
+   border-radius: 1rem;
+   width: 800px;
+}
+
+.title {
+   text-align: center;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.main-content .user_inputs {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   position: relative;
+}
+
+#input_search {
+   padding: 1rem;
+   border-radius: .5rem;
+   margin-right: 2rem;
+   border: 1px solid #333;
+   font-size: 2rem;
+   background-color: transparent;
+   flex: 3;
+}
+
+#btn_search {
+   padding: 1rem;
+   border-radius: 1rem;
+   font-size: 1.5rem;
+   background-color: #333;
+   border: 1px solid #333;
+   color: #fff ;
+   cursor: pointer;
+}
+
+.fa-github {
+   flex: 2;
+   font-size: 10rem;
+   margin-left: 2rem;
+   position: absolute;
+   right: -200px;
+}
+
+.user_content {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 1rem;
+}
+
+.profile_info {
+   display: flex;
+   justify-content: center;
+   width: auto;
+   justify-content: space-around;
+   gap: 4rem;
+   align-items: center; 
+   margin-top: 2rem;
+}
+
+.profile_info img {
+   border-radius: 50%;
+   border: 1px solid #333;
+   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.205);
+   width: 260px;
+   height: 260px;
+}
+
+.profile_info .data {
+   display: block;
+   padding: 2rem;
+   background-color: rgba(0, 0, 0, 0.212);
+   border-radius: .5rem;
+}
+
+.data h1,p {
+   font-size: 2rem;
+   line-height: 2rem;
+   margin-bottom: 1rem;
+}
+
+.data h1 {
+   font-weight: 700;
+   margin-bottom: 2rem;
+   font-size: 3rem;
+   width: 100%;
+   text-align: center;
+}
+
+.data p {
+   font-weight: 300;
+}
+
+.repositories_title{
+   border-top: 1px solid #333;
+   display: flex;
+   font-size: 2rem;
+   justify-content: center;
+   padding-top: 2rem;
+   margin-top: 5rem;
+}
+
+.repositories {
+   display: flex;
+   width: 100%;
+   padding: 2rem;
+   margin-top: 2rem;
+   justify-content: center;
+   border-bottom: 1px solid #333;
+   margin-bottom: 3rem;
+}
+
+.repositories ul {
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+
+   list-style: none;
+   gap: 1rem;
+   justify-content: center;
+}
+
+.repositories li {
+   padding: 2rem;
+   font-size: 2rem;
+   text-align: center;
+   background-color: #fff;
+   border: 1px solid #333;
+   border-radius: .5rem;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.repositories li:hover {
+   background-color: #ccc;
+   color: #333;
+   border: none;
+}
+
+.notfound {
+   font-size: 2rem;
+   margin-top: 3rem;
+}
+
+.userEvents {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: #ccc;
+   flex-wrap: wrap;
+   align-items: center;
+   font-size: 2rem;
+   margin-top: 2rem;
+   padding: 2rem 1rem;
+   border-radius: 2rem;
+   border: 1px solid #333;
+}
+
+.userEvents h2 {
+   font-size: 3rem;
+   margin: 1rem 0;
+   font-weight: 500;
+}
+
+.userEvents ul {
+   text-decoration: none;
+   line-height: 4rem;
+   font-weight: 300;
+   list-style: none;
+}
+
+.userEvents ul li a:hover {
+   font-weight: bold;
+}
+
+/* Resopive Not Ready */
+
